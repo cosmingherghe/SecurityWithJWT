@@ -8,8 +8,6 @@ import org.springframework.stereotype.Service;
 
 import dev.cosmingherghe.security.config.JwtService;
 import dev.cosmingherghe.security.dao.IUserRepository;
-import dev.cosmingherghe.security.entity.Role;
-import dev.cosmingherghe.security.entity.User;
 
 @Service
 @RequiredArgsConstructor

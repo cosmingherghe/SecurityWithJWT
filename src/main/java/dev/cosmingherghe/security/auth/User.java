@@ -1,4 +1,4 @@
-package dev.cosmingherghe.security.entity;
+package dev.cosmingherghe.security.auth;
 
 import java.util.Collection;
 import java.util.List;
@@ -7,6 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import dev.cosmingherghe.security.entity.Person;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

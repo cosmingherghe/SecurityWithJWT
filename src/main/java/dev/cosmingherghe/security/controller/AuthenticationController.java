@@ -1,4 +1,4 @@
-package dev.cosmingherghe.security.auth;
+package dev.cosmingherghe.security.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import dev.cosmingherghe.security.auth.AuthenticationRequest;
+import dev.cosmingherghe.security.auth.AuthenticationResponse;
+import dev.cosmingherghe.security.auth.AuthenticationService;
+import dev.cosmingherghe.security.auth.RegisterRequest;
 import lombok.RequiredArgsConstructor;
 
 @RestController
