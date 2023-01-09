@@ -1,5 +1,6 @@
 package dev.cosmingherghe.security.entity;
 
+import dev.cosmingherghe.security.auth.User;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -25,8 +26,8 @@ public class Person {
   private String email;
   private String telephone;
 
-  // @OneToOne(cascade = CascadeType.ALL, 
-  //           mappedBy = "person", 
-  //           fetch = FetchType.LAZY)
-  // private User user;
+  @OneToOne(cascade = CascadeType.ALL, 
+            mappedBy = "person", 
+            fetch = FetchType.LAZY)
+  private User user;
 }
