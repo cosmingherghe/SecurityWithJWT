@@ -8,5 +8,5 @@ import dev.cosmingherghe.security.entity.User;
 
 public interface IUserRepository extends JpaRepository<User, Long> {
 
-  Optional<User> findByUserName(String username);
+  Optional<User> findByUsername(String username);
 }
